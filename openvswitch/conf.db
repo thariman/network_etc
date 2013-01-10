@@ -16,3 +16,75 @@ OVSDB JSON 506 fc1194c980879e2c1dcdf1f30d5214c5f7287378
 {"Port":{"003035e0-ab33-412e-a354-2fe744e3cc89":{"name":"eth2","interfaces":["uuid","0b31f627-98a8-447f-a42f-c471fcf11f8e"]}},"Interface":{"0b31f627-98a8-447f-a42f-c471fcf11f8e":{"name":"eth2"}},"_comment":"ovs-vsctl: ovs-vsctl add-port br-ex eth2","Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"next_cfg":3}},"_date":1357792693,"Bridge":{"e8c2e7c1-389a-419e-80e5-2ae579086cc7":{"ports":["set",[["uuid","003035e0-ab33-412e-a354-2fe744e3cc89"],["uuid","acd9fbc0-d799-44dc-9cda-c7f52838c5fa"]]]}}}
 OVSDB JSON 91 4a7db67563377ce503fbaf53da9967a5133aa432
 {"Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"cur_cfg":3}},"_date":1357792693}
+OVSDB JSON 665 5a6fd5e9f410e62c6a857b1bda14008257b3d1ee
+{"Port":{"21fca74f-f918-4773-bd10-fb7820e718e6":{"name":"br-tun","interfaces":["uuid","109de346-09c3-4498-87eb-e18ac61a3ff3"]}},"Interface":{"109de346-09c3-4498-87eb-e18ac61a3ff3":{"name":"br-tun","type":"internal"}},"_comment":"ovs-vsctl: /usr/bin/ovs-vsctl --timeout=2 add-br br-tun","Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"next_cfg":4,"bridges":["set",[["uuid","00f66598-d964-4fcc-a0d4-bf409827226d"],["uuid","7f69604a-48d3-414f-93eb-481aa6b8e672"],["uuid","e8c2e7c1-389a-419e-80e5-2ae579086cc7"]]]}},"_date":1357793355,"Bridge":{"7f69604a-48d3-414f-93eb-481aa6b8e672":{"ports":["uuid","21fca74f-f918-4773-bd10-fb7820e718e6"],"name":"br-tun"}}}
+OVSDB JSON 91 6687d8ab49c0d24637c8b2280c1282dc7d43809f
+{"Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"cur_cfg":4}},"_date":1357793355}
+OVSDB JSON 543 466bd33b4b0827e795d30276b7c4426fcf08afca
+{"Port":{"bafe8425-603b-4e58-ba64-7029e72bbd52":{"name":"patch-tun","interfaces":["uuid","846cb333-f22d-46ac-a53d-88809297e679"]}},"Interface":{"846cb333-f22d-46ac-a53d-88809297e679":{"name":"patch-tun"}},"_comment":"ovs-vsctl: /usr/bin/ovs-vsctl --timeout=2 add-port br-int patch-tun","Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"next_cfg":5}},"_date":1357793355,"Bridge":{"00f66598-d964-4fcc-a0d4-bf409827226d":{"ports":["set",[["uuid","2bceb06f-fb09-4fba-9fb9-ceed8dd295a0"],["uuid","bafe8425-603b-4e58-ba64-7029e72bbd52"]]]}}}
+OVSDB JSON 91 46de093117f19d9a6ee3faedc813dedf756cd2d5
+{"Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"cur_cfg":5}},"_date":1357793355}
+OVSDB JSON 252 47b950fe5418a2d6e808f64cdb4fff636dfed1ab
+{"Interface":{"846cb333-f22d-46ac-a53d-88809297e679":{"type":"patch"}},"_comment":"ovs-vsctl: /usr/bin/ovs-vsctl --timeout=2 set Interface patch-tun type=patch","Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"next_cfg":6}},"_date":1357793355}
+OVSDB JSON 91 664b644eacca62b3f5b6a4baf1c24fad1b212d1d
+{"Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"cur_cfg":6}},"_date":1357793355}
+OVSDB JSON 290 05f5fe46a35eed6fc2acf2fad4d10b5182645533
+{"Interface":{"846cb333-f22d-46ac-a53d-88809297e679":{"options":["map",[["peer","patch-int"]]]}},"_comment":"ovs-vsctl: /usr/bin/ovs-vsctl --timeout=2 set Interface patch-tun options:peer=patch-int","Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"next_cfg":7}},"_date":1357793355}
+OVSDB JSON 91 312aea48d413377b663d32724947e630974586a3
+{"Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"cur_cfg":7}},"_date":1357793355}
+OVSDB JSON 543 314a295739688ef52a39a055f0468a56007ea17e
+{"Port":{"bfc210ae-aa43-4d2a-b925-9f223a34a598":{"name":"patch-int","interfaces":["uuid","537f5537-f666-44fd-9011-ffda91d02905"]}},"Interface":{"537f5537-f666-44fd-9011-ffda91d02905":{"name":"patch-int"}},"_comment":"ovs-vsctl: /usr/bin/ovs-vsctl --timeout=2 add-port br-tun patch-int","Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"next_cfg":8}},"_date":1357793355,"Bridge":{"7f69604a-48d3-414f-93eb-481aa6b8e672":{"ports":["set",[["uuid","21fca74f-f918-4773-bd10-fb7820e718e6"],["uuid","bfc210ae-aa43-4d2a-b925-9f223a34a598"]]]}}}
+OVSDB JSON 91 c97ca4a70dcc8f62c7e7cde54ca22540cc59943c
+{"Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"cur_cfg":8}},"_date":1357793355}
+OVSDB JSON 252 3fb74ec5927781b0451df1c14cacbfab207152ee
+{"Interface":{"537f5537-f666-44fd-9011-ffda91d02905":{"type":"patch"}},"_comment":"ovs-vsctl: /usr/bin/ovs-vsctl --timeout=2 set Interface patch-int type=patch","Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"next_cfg":9}},"_date":1357793355}
+OVSDB JSON 91 0612c22ac783c6a4e153e5c19c85d87cb5127dea
+{"Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"cur_cfg":9}},"_date":1357793355}
+OVSDB JSON 291 06bc18bec9136c4ad4ccd0370de75dbf172c8acd
+{"Interface":{"537f5537-f666-44fd-9011-ffda91d02905":{"options":["map",[["peer","patch-tun"]]]}},"_comment":"ovs-vsctl: /usr/bin/ovs-vsctl --timeout=2 set Interface patch-int options:peer=patch-tun","Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"next_cfg":10}},"_date":1357793355}
+OVSDB JSON 92 f9ac2bfa0d0b18f3c7c07d81d69e257bbddf3e74
+{"Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"cur_cfg":10}},"_date":1357793355}
+OVSDB JSON 408 26e4d79b3881e58daa7cab4af9f231e959e8ee82
+{"Port":{"bafe8425-603b-4e58-ba64-7029e72bbd52":null},"Interface":{"846cb333-f22d-46ac-a53d-88809297e679":null},"_comment":"ovs-vsctl: /usr/bin/ovs-vsctl --timeout=2 -- --if-exists del-port br-int patch-tun","Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"next_cfg":11}},"_date":1357793359,"Bridge":{"00f66598-d964-4fcc-a0d4-bf409827226d":{"ports":["uuid","2bceb06f-fb09-4fba-9fb9-ceed8dd295a0"]}}}
+OVSDB JSON 92 9d4d7fcc1bd2ff8d81bf4e7db96c6adf866117a7
+{"Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"cur_cfg":11}},"_date":1357793359}
+OVSDB JSON 547 b3570b5de6accbe1064b84545ce87b4f94ac68b4
+{"Port":{"bfc210ae-aa43-4d2a-b925-9f223a34a598":null,"21fca74f-f918-4773-bd10-fb7820e718e6":null},"Interface":{"109de346-09c3-4498-87eb-e18ac61a3ff3":null,"537f5537-f666-44fd-9011-ffda91d02905":null},"_comment":"ovs-vsctl: /usr/bin/ovs-vsctl --timeout=2 -- --if-exists del-br br-tun","Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"next_cfg":12,"bridges":["set",[["uuid","00f66598-d964-4fcc-a0d4-bf409827226d"],["uuid","e8c2e7c1-389a-419e-80e5-2ae579086cc7"]]]}},"_date":1357793359,"Bridge":{"7f69604a-48d3-414f-93eb-481aa6b8e672":null}}
+OVSDB JSON 92 a7015fb1613868f264f1cc89c8e9ceddaac213b0
+{"Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"cur_cfg":12}},"_date":1357793359}
+OVSDB JSON 666 70a320d1fd2d20b88cd3f9b1b923179aaef65067
+{"Port":{"77e86938-f4b4-4635-8379-39a894feb0ca":{"name":"br-tun","interfaces":["uuid","65e2cf33-94c6-4e05-a1ad-6b6408679649"]}},"Interface":{"65e2cf33-94c6-4e05-a1ad-6b6408679649":{"name":"br-tun","type":"internal"}},"_comment":"ovs-vsctl: /usr/bin/ovs-vsctl --timeout=2 add-br br-tun","Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"next_cfg":13,"bridges":["set",[["uuid","00f66598-d964-4fcc-a0d4-bf409827226d"],["uuid","e8c2e7c1-389a-419e-80e5-2ae579086cc7"],["uuid","f0e7ce51-36be-45b9-84b2-6cfdd36692d5"]]]}},"_date":1357793359,"Bridge":{"f0e7ce51-36be-45b9-84b2-6cfdd36692d5":{"ports":["uuid","77e86938-f4b4-4635-8379-39a894feb0ca"],"name":"br-tun"}}}
+OVSDB JSON 92 54605f7b9a2d638a9e997507a531104c7b1a3a29
+{"Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"cur_cfg":13}},"_date":1357793359}
+OVSDB JSON 544 f86893a0e1364482773086d62bfb032cfcb09f2c
+{"Port":{"b3834d1b-8fe8-4b4b-b5d6-d58c07a0f4aa":{"name":"patch-tun","interfaces":["uuid","7319bb2a-4c60-4a72-afe8-3cb5adc71288"]}},"Interface":{"7319bb2a-4c60-4a72-afe8-3cb5adc71288":{"name":"patch-tun"}},"_comment":"ovs-vsctl: /usr/bin/ovs-vsctl --timeout=2 add-port br-int patch-tun","Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"next_cfg":14}},"_date":1357793359,"Bridge":{"00f66598-d964-4fcc-a0d4-bf409827226d":{"ports":["set",[["uuid","2bceb06f-fb09-4fba-9fb9-ceed8dd295a0"],["uuid","b3834d1b-8fe8-4b4b-b5d6-d58c07a0f4aa"]]]}}}
+OVSDB JSON 92 853f20835d2e298ad3e994a01b494cae8129556c
+{"Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"cur_cfg":14}},"_date":1357793359}
+OVSDB JSON 253 5c14ed06650c79edd8e253d8d9a31751087f6059
+{"Interface":{"7319bb2a-4c60-4a72-afe8-3cb5adc71288":{"type":"patch"}},"_comment":"ovs-vsctl: /usr/bin/ovs-vsctl --timeout=2 set Interface patch-tun type=patch","Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"next_cfg":15}},"_date":1357793359}
+OVSDB JSON 92 4384af7f209e57b5d06753082d39682bf087ddf2
+{"Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"cur_cfg":15}},"_date":1357793359}
+OVSDB JSON 291 e7bdc7c34e94dd66ee74fac222c9a5a4fc519d6e
+{"Interface":{"7319bb2a-4c60-4a72-afe8-3cb5adc71288":{"options":["map",[["peer","patch-int"]]]}},"_comment":"ovs-vsctl: /usr/bin/ovs-vsctl --timeout=2 set Interface patch-tun options:peer=patch-int","Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"next_cfg":16}},"_date":1357793359}
+OVSDB JSON 92 9bf7264574637822c59443c7a69f3089b979f261
+{"Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"cur_cfg":16}},"_date":1357793359}
+OVSDB JSON 544 d0c102efd1f8464ef2a58383583e01a46f28b77d
+{"Port":{"bd120d1e-f931-46a2-9917-adff5f4c0358":{"name":"patch-int","interfaces":["uuid","2ec96502-572e-4553-a713-8340d458cad5"]}},"Interface":{"2ec96502-572e-4553-a713-8340d458cad5":{"name":"patch-int"}},"_comment":"ovs-vsctl: /usr/bin/ovs-vsctl --timeout=2 add-port br-tun patch-int","Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"next_cfg":17}},"_date":1357793359,"Bridge":{"f0e7ce51-36be-45b9-84b2-6cfdd36692d5":{"ports":["set",[["uuid","77e86938-f4b4-4635-8379-39a894feb0ca"],["uuid","bd120d1e-f931-46a2-9917-adff5f4c0358"]]]}}}
+OVSDB JSON 92 84821d8fe67b2ffd5cc96bd4dd9c8aa1a98e0702
+{"Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"cur_cfg":17}},"_date":1357793359}
+OVSDB JSON 253 e6a895deb1192d9f80cf92df51545eb1a7f053f6
+{"Interface":{"2ec96502-572e-4553-a713-8340d458cad5":{"type":"patch"}},"_comment":"ovs-vsctl: /usr/bin/ovs-vsctl --timeout=2 set Interface patch-int type=patch","Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"next_cfg":18}},"_date":1357793359}
+OVSDB JSON 92 8d2e81b8f1eeaf169b707f8cc77541edc97c206d
+{"Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"cur_cfg":18}},"_date":1357793359}
+OVSDB JSON 291 60991788b07e252d5442e198cf221014c59393f7
+{"Interface":{"2ec96502-572e-4553-a713-8340d458cad5":{"options":["map",[["peer","patch-tun"]]]}},"_comment":"ovs-vsctl: /usr/bin/ovs-vsctl --timeout=2 set Interface patch-int options:peer=patch-tun","Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"next_cfg":19}},"_date":1357793359}
+OVSDB JSON 92 d56f524ac969778c24fb4faffa095d77950c7731
+{"Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"cur_cfg":19}},"_date":1357793359}
+OVSDB JSON 1046 3b4bd229865cf7c201209b699c7827f5428ca01b
+{"Port":{"a3c7efd3-7366-42d8-8c92-6d4046fb4702":{"name":"tap7921bda2-e0","interfaces":["uuid","b79dd22f-cb46-43c5-b9ac-19e2bf47993d"]}},"Interface":{"b79dd22f-cb46-43c5-b9ac-19e2bf47993d":{"external_ids":["map",[["attached-mac","fa:16:3e:1e:05:f4"],["iface-id","7921bda2-e0bf-4b66-a7ed-d0466137f081"],["iface-status","active"]]],"name":"tap7921bda2-e0","type":"internal"}},"_comment":"ovs-vsctl: /usr/bin/ovs-vsctl -- --may-exist add-port br-int tap7921bda2-e0 -- set Interface tap7921bda2-e0 type=internal -- set Interface tap7921bda2-e0 external-ids:iface-id=7921bda2-e0bf-4b66-a7ed-d0466137f081 -- set Interface tap7921bda2-e0 external-ids:iface-status=active -- set Interface tap7921bda2-e0 external-ids:attached-mac=fa:16:3e:1e:05:f4","Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"next_cfg":20}},"_date":1357793440,"Bridge":{"00f66598-d964-4fcc-a0d4-bf409827226d":{"ports":["set",[["uuid","2bceb06f-fb09-4fba-9fb9-ceed8dd295a0"],["uuid","a3c7efd3-7366-42d8-8c92-6d4046fb4702"],["uuid","b3834d1b-8fe8-4b4b-b5d6-d58c07a0f4aa"]]]}}}
+OVSDB JSON 92 3f510563d4b768e20bb9af544fe925c53f64dde8
+{"Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"cur_cfg":20}},"_date":1357793440}
+OVSDB JSON 236 52ddd138c8100103d9175faa152570e05c14e804
+{"Port":{"a3c7efd3-7366-42d8-8c92-6d4046fb4702":{"tag":1}},"_comment":"ovs-vsctl: /usr/bin/ovs-vsctl --timeout=2 set Port tap7921bda2-e0 tag=1","Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"next_cfg":21}},"_date":1357793442}
+OVSDB JSON 92 17a271338dd47a33c8ef2d3e40b2e8bd7028fe38
+{"Open_vSwitch":{"666b3d80-9442-4231-9c56-2903bc6472e0":{"cur_cfg":21}},"_date":1357793442}
